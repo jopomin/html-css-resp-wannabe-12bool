@@ -1,3 +1,37 @@
+/**** Debug ****/
+
+.debug [class*="col-"] {
+  position: relative;
+  padding: 5px;
+  border: 1px solid black;
+  background: pink;
+}
+​
+.debug [class*="col-"] > .container{
+  height: 100%;
+}
+​
+.debug [class*="col-"] > .container [class*="col-"] {
+  position: relative;
+  border: 1px solid white;
+  background: lightcoral;
+  height: 100%;
+}
+​
+.debug [class*="col-"] > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+​
+.debug .container {
+  height: 200px;
+}
+
+/**** Framework ****/
+
 * {
   margin: 0;
   padding: 0;
